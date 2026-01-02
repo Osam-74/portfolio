@@ -30,11 +30,11 @@ export const portfolioData: CandidateData = {
       location: "Oyo, Nigeria",
       period: "October 2022 – Present",
       achievements: [
-        "Orchestrated digital transformation initiatives by developing custom WordPress solutions for organizational websites including e-commerce functionality and member portals",
-        "Led full-scale website migrations encompassing DNS configuration, cPanel management, database transfers, and comprehensive post-migration testing ensuring zero downtime",
-        "Architected operational systems including a custom QR-based event check-in system handling 1,000+ guests with real-time data tracking",
-        "Developed custom WordPress plugins and integrations for visitor management, API-based content synchronization, and workflow automation",
-        "Managed complete web infrastructure including hosting administration, SSL certificate management, and 24/7 technical support"
+        "Built custom WordPress websites with online store features and member access areas",
+        "Successfully moved websites from one server to another with careful planning to avoid any downtime",
+        "Created a QR code system that lets guests check in to events quickly, handling over 1,000 people at once",
+        "Built custom tools for WordPress that track visitors, sync data automatically, and save time on repetitive tasks",
+        "Managed all website hosting, security, and provided support whenever issues came up"
       ]
     },
     {
@@ -43,10 +43,22 @@ export const portfolioData: CandidateData = {
       location: "Remote",
       period: "Ongoing",
       achievements: [
-        "Delivered comprehensive WordPress solutions including custom theme development, WooCommerce/Shopify store setup, and complex site migrations",
-        "Developed mobile-first e-commerce WordPress theme from Figma design implementing Advanced Custom Fields (ACF)",
-        "Provided end-to-end WordPress maintenance including speed optimization, security hardening, and plugin conflict resolution",
-        "Executed brand identity projects encompassing logo design, marketing collateral, and social media graphics"
+        "Created WordPress websites from scratch, set up online stores, and moved existing sites to new platforms",
+        "Built mobile-friendly online store WordPress websites from design mockups",
+        "Kept WordPress sites running smoothly by fixing problems, speeding them up, and improving security",
+        "Created logos, marketing materials, and social media graphics for client brands"
+      ]
+    },
+    {
+      position: "Freelance Executive/Virtual Assistant",
+      company: "Multiple Clients",
+      location: "Remote",
+      period: "Ongoing",
+      achievements: [
+        "Managed executives' schedules, prepared reports, and coordinated meetings to keep operations running smoothly",
+        "Handled professional emails and correspondence with clients and partners to maintain strong business relationships",
+        "Organized virtual events and webinars, ensuring everything ran smoothly from start to finish",
+        "Created professional presentations, reports, and branded documents using Microsoft Office and Google Suite"
       ]
     }
   ],
