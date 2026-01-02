@@ -12,6 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   const navLinks = [
     { name: 'Home', href: '#home', icon: User },
     { name: 'About', href: '#about', icon: Cpu },
+    { name: 'Capacities', href: '#capacities', icon: Briefcase },
     { name: 'Skills', href: '#skills', icon: Code2 },
     { name: 'Experience', href: '#experience', icon: Briefcase },
     { name: 'Projects', href: '#projects', icon: FolderKanban },

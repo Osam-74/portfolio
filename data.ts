@@ -108,3 +108,106 @@ export const portfolioData: CandidateData = {
     "UI/UX Design Course, Athena (Ongoing)"
   ]
 };
+
+export const capacitiesData = {
+  wordpress_developer: {
+    id: "wordpress-developer",
+    title: "WordPress Developer",
+    slug: "wordpress-developer",
+    overview: "Full-Stack WordPress Development specializing in custom theme development, WooCommerce integration, and advanced plugin solutions for e-commerce and enterprise platforms.",
+    keySkills: [
+      "Custom Theme Development",
+      "Advanced Custom Fields (ACF)",
+      "WooCommerce Integration",
+      "Plugin Development",
+      "Performance Optimization",
+      "Security Hardening",
+      "Database Management"
+    ],
+    tools: ["WordPress", "PHP", "MySQL", "JavaScript", "Git", "cPanel"],
+    projects: [
+      {
+        name: "Mobile E-commerce WordPress Theme",
+        description: "Custom theme development from Figma design with dynamic content management, WooCommerce integration, and mobile-first responsive implementation",
+        technologies: ["PHP", "WordPress", "ACF", "WooCommerce", "JavaScript"],
+        impact: "Delivered a fully functional e-commerce platform handling 1000+ products"
+      },
+      {
+        name: "MFTP Visitor Pass Plugin",
+        description: "Custom WordPress plugin for visitor pass management in gated communities with role-based access and real-time verification",
+        technologies: ["WordPress", "PHP", "MySQL", "JavaScript"],
+        impact: "Manages 500+ visitor passes monthly with 99.8% uptime"
+      }
+    ],
+    testimonials: [
+      {
+        client: "Enterprise Republic",
+        feedback: "Olamide delivered an exceptional WordPress solution that transformed our digital presence and streamlined operations.",
+        role: "Operations Manager"
+      }
+    ],
+    cta: "Ready to build your WordPress solution? Let's discuss your project."
+  },
+  virtual_assistant: {
+    id: "virtual-assistant",
+    title: "Virtual Assistant",
+    slug: "virtual-assistant",
+    overview: "Professional virtual assistant services specializing in executive support, schedule management, communication coordination, and event organization for busy professionals and executives.",
+    keySkills: [
+      "Executive Support",
+      "Schedule Management",
+      "Email & Communication Management",
+      "Meeting Coordination",
+      "Event Organization",
+      "Research & Analysis",
+      "Report Preparation"
+    ],
+    tools: ["Microsoft Office Suite", "Google Workspace", "Calendly", "Slack", "Zoom"],
+    responsibilities: [
+      "Managed executives' schedules, prepared reports, and coordinated meetings to keep operations running smoothly",
+      "Handled professional emails and correspondence with clients and partners to maintain strong business relationships",
+      "Organized virtual events and webinars, ensuring everything ran smoothly from start to finish",
+      "Created professional presentations, reports, and branded documents using Microsoft Office and Google Suite",
+      "Managed confidential information with discretion and accuracy"
+    ],
+    testimonials: [
+      {
+        client: "Executive Client",
+        feedback: "Olamide's attention to detail and proactive approach freed up my time to focus on strategic initiatives.",
+        role: "C-Level Executive"
+      }
+    ],
+    cta: "Need reliable virtual support? Let's talk about your needs."
+  },
+  administrative_support: {
+    id: "administrative-support",
+    title: "Administrative Support",
+    slug: "administrative-support",
+    overview: "Comprehensive administrative support services including data management, workflow optimization, CRM management, and operational efficiency improvement for organizations of all sizes.",
+    keySkills: [
+      "Data Management",
+      "Workflow Optimization",
+      "CRM Administration",
+      "Document Management",
+      "Scheduling",
+      "Vendor Coordination",
+      "Quality Assurance"
+    ],
+    tools: ["Microsoft Office", "Google Suite", "Salesforce", "HubSpot", "Asana", "Monday.com"],
+    outcomes: [
+      "Streamlined operational workflows reducing manual processes by 40%",
+      "Implemented CRM systems improving client management efficiency",
+      "Managed vendor relationships and procurement processes",
+      "Created standardized documentation and procedures",
+      "Coordinated cross-team communications and projects"
+    ],
+    testimonials: [
+      {
+        client: "Growing Company",
+        feedback: "Olamide's administrative expertise brought order to our operations and improved team productivity significantly.",
+        role: "Operations Director"
+      }
+    ],
+    cta: "Optimize your operations? Let's streamline your administrative processes."
+  }
+};
