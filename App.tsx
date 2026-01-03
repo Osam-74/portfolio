@@ -1,4 +1,5 @@
 
+
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { portfolioData } from './data';
@@ -53,7 +54,7 @@ const HomePage: React.FC = () => {
   );
 };
 
-const App: React.FC = () => {
+const AppRoutes: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -68,10 +69,10 @@ const App: React.FC = () => {
   );
 };
 
-export default function RootApp() {
+export default function App() {
   return (
     <Router basename="/portfolio">
-      <App />
+      <AppRoutes />
     </Router>
   );
 }
