@@ -5,25 +5,25 @@ import { Link } from 'react-router-dom';
 const Capacities: React.FC = () => {
   const capacities = [
     {
-      id: 'wordpress-developer',
-      title: 'WordPress Developer',
-      description: 'Full-Stack WordPress development with custom themes, plugins, and WooCommerce integration',
-      icon: Code2,
-      color: 'indigo'
+      id: 'administrative-support',
+      title: 'Administrative / Programme Assistant',
+      description: 'Operational, administrative, and programme support across tech hubs, events, and training initiatives.',
+      icon: Briefcase,
+      color: 'emerald'
     },
     {
       id: 'virtual-assistant',
       title: 'Virtual Assistant',
-      description: 'Executive support, schedule management, and professional communication services',
+      description: 'Executive and technical support for founders, senior leaders, and large-scale programmes.',
       icon: Users,
       color: 'purple'
     },
     {
-      id: 'administrative-support',
-      title: 'Administrative Support',
-      description: 'Data management, workflow optimization, and operational efficiency improvement',
-      icon: Briefcase,
-      color: 'emerald'
+      id: 'wordpress-developer',
+      title: 'Full-Stack WordPress Developer',
+      description: 'Custom WordPress websites, plugins, and scalable digital solutions built for real organisations.',
+      icon: Code2,
+      color: 'indigo'
     }
   ];
 
@@ -31,9 +31,9 @@ const Capacities: React.FC = () => {
     <section id="capacities" className="py-24 bg-zinc-950/50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16">
-          <p className="text-indigo-400 font-bold uppercase tracking-widest text-sm mb-4">Expertise</p>
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">Areas of Expertise</h2>
-          <p className="text-zinc-400 max-w-2xl">I specialize in multiple areas. Select below to explore my services, projects, and expertise in each specialization.</p>
+          <p className="text-indigo-400 font-bold uppercase tracking-widest text-sm mb-4">Professional Capacities</p>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">My Areas of Expertise</h2>
+          <p className="text-zinc-400 max-w-3xl leading-relaxed">I work across multiple professional capacities, supporting executives, organisations, and technical teams through a combination of administrative excellence, technical execution, and programme coordination. Each capacity below reflects hands-on experience across real projects, recognised institutions, and high-impact events.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
