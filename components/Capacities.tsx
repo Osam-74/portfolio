@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Code2, Users, Briefcase } from 'lucide-react';
+import { ArrowRight, Code2, Users, Briefcase, Palette } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Capacities: React.FC = () => {
@@ -24,6 +24,13 @@ const Capacities: React.FC = () => {
       description: 'Custom WordPress websites, plugins, and scalable digital solutions built for real organisations.',
       icon: Code2,
       color: 'indigo'
+    },
+    {
+      id: 'graphic-designer',
+      title: 'Graphic Designer',
+      description: 'Creative visual design spanning branding, UI/UX, social media, and motion graphics.',
+      icon: Palette,
+      color: 'rose'
     }
   ];
 
@@ -36,13 +43,14 @@ const Capacities: React.FC = () => {
           <p className="text-zinc-400 max-w-3xl leading-relaxed">I work across multiple professional capacities, supporting executives, organisations, and technical teams through a combination of administrative excellence, technical execution, and programme coordination. Each capacity below reflects hands-on experience across real projects, recognised institutions, and high-impact events.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {capacities.map((capacity) => {
             const Icon = capacity.icon;
             const colorClasses = {
               indigo: 'from-indigo-500 to-indigo-600 hover:from-indigo-400 hover:to-indigo-500',
               purple: 'from-purple-500 to-purple-600 hover:from-purple-400 hover:to-purple-500',
-              emerald: 'from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500'
+              emerald: 'from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500',
+              rose: 'from-rose-500 to-rose-600 hover:from-rose-400 hover:to-rose-500'
             };
 
             return (

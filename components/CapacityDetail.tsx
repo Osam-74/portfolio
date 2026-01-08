@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Star } from 'lucide-react';
 import { capacitiesData } from '../data';
+import GraphicDesignerPortfolio from './GraphicDesignerPortfolio';
 
 const CapacityDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -40,6 +41,14 @@ const CapacityDetail: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           {/* Main Content */}
           <div className="lg:col-span-2">
+            {/* Portfolio Gallery - Graphic Designer */}
+            {capacity.portfolio && capacity.portfolio.length > 0 && (
+              <div className="mb-16">
+                <h2 className="text-3xl font-bold mb-8">Design Portfolio</h2>
+                <GraphicDesignerPortfolio images={capacity.portfolio} />
+              </div>
+            )}
+
             {/* About This Capacity */}
             <div className="mb-16 glass-card p-8 rounded-[2rem] border border-zinc-800">
               <h2 className="text-3xl font-bold mb-4">About This Capacity</h2>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BCD4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#009688;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#grad5)"/>
+  
+  <!-- Design -->
+  <rect x="200" y="100" width="350" height="600" fill="#ffffff" opacity="0.15" rx="25"/>
+  <circle cx="900" cy="400" r="150" fill="#ffffff" opacity="0.08"/>
+  
+  <!-- Content -->
+  <text x="250" y="240" font-size="52" font-weight="bold" fill="#ffffff" font-family="Arial">Print Design</text>
+  <text x="250" y="320" font-size="26" fill="#ffffff" opacity="0.9" font-family="Arial">Brochure & Flyer Series</text>
+  <text x="250" y="400" font-size="16" fill="#ffffff" opacity="0.8" font-family="Arial">A4 • Tri-fold • Professional</text>
+  
+  <!-- Decorative -->
+  <line x1="200" y1="450" x2="550" y2="450" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <path d="M 200 500 Q 375 550 550 500" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.2"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891B2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#grad8)"/>
+  
+  <!-- Elements -->
+  <rect x="100" y="250" width="400" height="350" fill="#ffffff" opacity="0.12" rx="20"/>
+  <circle cx="850" cy="250" r="130" fill="#ffffff" opacity="0.08"/>
+  <polygon points="50,650 150,720 80,750" fill="#ffffff" opacity="0.1"/>
+  
+  <!-- Text -->
+  <text x="150" y="300" font-size="56" font-weight="bold" fill="#ffffff" font-family="Arial">Motion Graphics</text>
+  <text x="150" y="380" font-size="26" fill="#ffffff" opacity="0.9" font-family="Arial">Video Intro & Animation</text>
+  <text x="150" y="460" font-size="18" fill="#ffffff" opacity="0.8" font-family="Arial">30s • Smooth Transitions • Professional</text>
+  <text x="150" y="530" font-size="16" fill="#ffffff" opacity="0.7" font-family="Arial">Adobe After Effects • Figma</text>
+</svg>

@@ -273,5 +273,134 @@ export const capacitiesData = {
       "Successfully managed 20+ student interns with structured guidance"
     ],
     cta: "If you need structured administrative and programme support from someone who understands operations, people, and technology, let's connect."
+  },
+  graphic_designer: {
+    id: "graphic-designer",
+    title: "Graphic Designer",
+    slug: "graphic-designer",
+    overview: "I create compelling visual designs that communicate brand stories and engage audiences. My work spans from logo design and brand identity to social media graphics, packaging design, and digital UI/UX. I combine creative thinking with design principles to produce visuals that are not just beautiful, but strategically aligned with business goals. Each design is crafted with attention to detail, colour theory, typography, and user experience.",
+    keySkills: [
+      "Logo & Brand Identity Design",
+      "Social Media Graphics & Campaigns",
+      "UI/UX Design & Prototyping",
+      "Packaging & Print Design",
+      "Typography & Layout Design",
+      "Web Design & Landing Pages",
+      "Motion Graphics & Animation",
+      "Brand Strategy & Colour Theory"
+    ],
+    tools: ["Figma", "Adobe Creative Suite (Photoshop, Illustrator, After Effects)", "Canva Pro", "Sketch", "InVision"],
+    portfolio: [
+      {
+        id: "design-1",
+        title: "Brand Identity System",
+        category: "branding",
+        description: "Complete brand identity package including logo design, colour palette, typography guidelines, and brand applications. Designed for a modern tech startup with emphasis on innovation and trust.",
+        image: "/images/design-1-brand-identity.svg",
+        tools: ["Figma", "Adobe Illustrator", "Brand Guidelines"]
+      },
+      {
+        id: "design-2",
+        title: "Social Media Campaign",
+        category: "social-media",
+        description: "Comprehensive social media design package with Instagram posts, Stories, Facebook covers, and LinkedIn graphics. Maintains consistent brand voice across all platforms with engaging visuals.",
+        image: "/images/design-2-social-media.svg",
+        tools: ["Figma", "Canva Pro", "Adobe Photoshop"]
+      },
+      {
+        id: "design-3",
+        title: "Premium Packaging Design",
+        category: "packaging",
+        description: "Luxury skincare product packaging design including label design and 3D box mockup. Features elegant typography, sophisticated colour scheme, and sustainable design considerations.",
+        image: "/images/design-3-packaging.svg",
+        tools: ["Adobe Illustrator", "Figma", "3D Mockup Tools"]
+      },
+      {
+        id: "design-4",
+        title: "Web Landing Page Design",
+        category: "web-design",
+        description: "Modern landing page design for a SaaS product. Features clean typography, intuitive navigation, compelling CTAs, and responsive layout optimized for all devices.",
+        image: "/images/design-4-web.svg",
+        tools: ["Figma", "Adobe XD", "Responsive Design"]
+      },
+      {
+        id: "design-5",
+        title: "Print Marketing Collateral",
+        category: "print",
+        description: "Professional brochure and flyer design series for corporate marketing. Tri-fold brochure with compelling copy integration, business cards, and promotional materials.",
+        image: "/images/design-5-print.svg",
+        tools: ["Adobe InDesign", "Illustrator", "Print Standards"]
+      },
+      {
+        id: "design-6",
+        title: "Mobile App UI Kit",
+        category: "ui-ux",
+        description: "Complete UI kit for a mobile fintech application. Includes buttons, forms, navigation components, modals, and interactive elements. Follows modern design trends and accessibility standards.",
+        image: "/images/design-6-ui-kit.svg",
+        tools: ["Figma", "Adobe XD", "UI Design System"]
+      },
+      {
+        id: "design-7",
+        title: "Typography & Poster Design",
+        category: "typography",
+        description: "Creative poster designs showcasing typography excellence. Features bold font combinations, strategic hierarchy, and artistic composition. Designed for both digital and print display.",
+        image: "/images/design-7-typography.svg",
+        tools: ["Figma", "Adobe Illustrator", "Typography"]
+      },
+      {
+        id: "design-8",
+        title: "Motion Graphics & Animation",
+        category: "animation",
+        description: "30-second video intro animation featuring smooth transitions, brand-aligned graphics, and professional colour grading. Perfect for YouTube, social media, and presentations.",
+        image: "/images/design-8-motion.svg",
+        tools: ["Adobe After Effects", "Figma", "Video Editing"]
+      }
+    ],
+    projects: [
+      {
+        name: "Enterprise Republic Branding",
+        description: "Complete brand identity system including logo design, brand guidelines, social media templates, and marketing collateral for a tech hub.",
+        technologies: ["Figma", "Adobe Suite", "Brand Strategy"],
+        impact: "Established consistent professional brand presence across all touchpoints"
+      },
+      {
+        name: "E-commerce Social Media Campaign",
+        description: "Designed 40+ social media graphics for product launches, seasonal campaigns, and engagement content across Instagram, Facebook, and LinkedIn.",
+        technologies: ["Canva Pro", "Adobe Photoshop", "Social Strategy"],
+        impact: "Increased social media engagement by creating cohesive, branded visual content"
+      },
+      {
+        name: "Client Logo & Branding Projects",
+        description: "Created custom logos and brand identities for multiple clients spanning tech, retail, and service industries. Each project included logo design, colour palettes, and brand guidelines.",
+        technologies: ["Adobe Illustrator", "Figma", "Brand Guidelines"],
+        impact: "Delivered professional brand identities that clients use across all marketing materials"
+      },
+      {
+        name: "Figma to WordPress UI Implementation",
+        description: "Translated design mockups into responsive WordPress websites. Collaborated with developers to ensure design integrity and optimal user experience.",
+        technologies: ["Figma", "WordPress", "Responsive Design", "HTML/CSS"],
+        impact: "Successfully bridged design and development with pixel-perfect implementation"
+      }
+    ],
+    testimonials: [
+      {
+        client: "Enterprise Republic",
+        feedback: "Outstanding graphic design work that elevated our brand presence and professional image. Attention to detail and creative excellence.",
+        role: "Leadership Team"
+      },
+      {
+        client: "Multiple Clients",
+        feedback: "Creative, professional, and always delivers designs that exceed expectations. Great at understanding brand vision and executing it beautifully.",
+        role: "Business Owners"
+      }
+    ],
+    outcomes: [
+      "Created cohesive brand identities for 15+ clients across various industries",
+      "Designed 100+ social media graphics with high engagement rates",
+      "Developed reusable design systems and UI kits for scalable solutions",
+      "Successfully translated designs into functional, responsive web experiences",
+      "Established reputation for design excellence and reliable project delivery"
+    ],
+    cta: "Ready to bring your brand vision to life? Let's create beautiful, strategic designs that tell your story."
   }
 };
