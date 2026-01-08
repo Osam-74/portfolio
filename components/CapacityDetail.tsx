@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Star } from 'lucide-react';
 import { capacitiesData } from '../data';
-import GraphicDesignerPortfolio from './GraphicDesignerPortfolio';
+import GraphicDesignerPortfolio from './GraphicDesignerPortfolio.tsx';
 
 const CapacityDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
