@@ -71,7 +71,7 @@ const AppRoutes: React.FC = () => {
 
 export default function App() {
   return (
-    <Router basename="/portfolio">
+    <Router>
       <AppRoutes />
     </Router>
   );
