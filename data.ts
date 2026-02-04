@@ -292,6 +292,22 @@ export const capacitiesData = {
     tools: ["Figma", "Adobe Creative Suite (Photoshop, Illustrator, After Effects)", "Canva Pro", "Sketch", "InVision"],
     portfolio: [
       {
+        id: "design-special-1",
+        title: "Valentine's Special Packages",
+        category: "promotional",
+        description: "Eye-catching promotional design for Valentine's Day special packages. Features vibrant red and gold colour scheme with romantic imagery, package tiers (Self Love, Gift My Love, Premium & Luxury, Sweetheart Special), clear pricing, and call-to-action details. Designed to drive conversions with visual hierarchy and compelling offers.",
+        image: "/images/Design 1.png",
+        tools: ["Adobe Photoshop", "Canva Pro", "Promotional Design"]
+      },
+      {
+        id: "design-special-1b",
+        title: "Valentine's Special Packages (Variant)",
+        category: "promotional",
+        description: "Alternative variant of the Valentine's Day promotional design featuring the same package offers with adjusted layout and styling. Maintains brand consistency while providing design flexibility for different marketing channels.",
+        image: "/images/Design 1b.png",
+        tools: ["Adobe Photoshop", "Canva Pro", "Design Variations"]
+      },
+      {
         id: "design-1",
         title: "Brand Identity System",
         category: "branding",
@@ -354,6 +370,14 @@ export const capacitiesData = {
         description: "30-second video intro animation featuring smooth transitions, brand-aligned graphics, and professional colour grading. Perfect for YouTube, social media, and presentations.",
         image: "/images/design-8-motion.svg",
         tools: ["Adobe After Effects", "Figma", "Video Editing"]
+      },
+      {
+        id: "design-digest-programme",
+        title: "DIGEST Programme Front Cover",
+        category: "print",
+        description: "Professional programme cover design for the DIGEST educational initiative. Features clean typography, strategic layout with key information hierarchy, and professional colour scheme. Designed to establish credibility and guide participants through programme details with elegant visual presentation.",
+        image: "/images/DIGEST programme.png",
+        tools: ["Adobe InDesign", "Photoshop", "Print Design"]
       }
     ],
     projects: [

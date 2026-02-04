@@ -66,9 +66,9 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-600/5 rounded-full blur-[100px] pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="glass-card rounded-[3rem] p-12 lg:p-20 relative overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="glass-card rounded-[3rem] p-6 sm:p-8 md:p-12 lg:p-20 relative overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20">
             <div>
               <p className="text-indigo-400 font-bold uppercase tracking-widest text-sm mb-4">Contact</p>
               <h2 className="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">
@@ -83,9 +83,9 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
                   <div className="w-14 h-14 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-indigo-400 shrink-0">
                     <Mail size={24} />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-1">Email Me</p>
-                    <a href={`mailto:${info.email}`} className="text-xl font-bold text-zinc-200 hover:text-indigo-400 transition-colors">{info.email}</a>
+                    <a href={`mailto:${info.email}`} className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-zinc-200 hover:text-indigo-400 transition-colors break-all">{info.email}</a>
                   </div>
                 </div>
                 
@@ -93,9 +93,9 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
                   <div className="w-14 h-14 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-purple-400 shrink-0">
                     <Phone size={24} />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-1">Call Me</p>
-                    <a href={`tel:${info.phone}`} className="text-xl font-bold text-zinc-200 hover:text-purple-400 transition-colors">{info.phone}</a>
+                    <a href={`tel:${info.phone}`} className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-zinc-200 hover:text-purple-400 transition-colors break-all">{info.phone}</a>
                   </div>
                 </div>
                 
@@ -111,9 +111,9 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
               </div>
             </div>
             
-            <div className="bg-zinc-950/50 p-8 md:p-12 rounded-[2.5rem] border border-zinc-800/50">
-              <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-zinc-950/50 p-6 sm:p-8 md:p-12 rounded-[2.5rem] border border-zinc-800/50">
+              <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-zinc-500 uppercase tracking-widest px-1">Full Name</label>
                     <input 
@@ -123,7 +123,7 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
                       onChange={handleChange}
                       placeholder="John Doe"
                       required
-                      className="w-full bg-zinc-900 border border-zinc-800 rounded-2xl px-5 py-4 text-zinc-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full bg-zinc-900 border border-zinc-800 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm sm:text-base"
                     />
                   </div>
                   <div className="space-y-2">
@@ -135,7 +135,7 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
                       onChange={handleChange}
                       placeholder="john@example.com"
                       required
-                      className="w-full bg-zinc-900 border border-zinc-800 rounded-2xl px-5 py-4 text-zinc-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                      className="w-full bg-zinc-900 border border-zinc-800 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm sm:text-base"
                     />
                   </div>
                 </div>
@@ -146,7 +146,7 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full bg-zinc-900 border border-zinc-800 rounded-2xl px-5 py-4 text-zinc-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all appearance-none"
+                    className="w-full bg-zinc-900 border border-zinc-800 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-zinc-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all appearance-none text-sm sm:text-base"
                   >
                     <option>Web Development</option>
                     <option>WordPress Solution</option>
@@ -160,17 +160,17 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
                   <label className="text-xs font-bold text-zinc-500 uppercase tracking-widest px-1">Your Message</label>
                   <textarea 
                     name="message"
-                    rows={5} 
+                    rows={4}
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Tell me about your project..."
                     required
-                    className="w-full bg-zinc-900 border border-zinc-800 rounded-2xl px-5 py-4 text-zinc-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all resize-none"
+                    className="w-full bg-zinc-900 border border-zinc-800 rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all resize-none text-sm sm:text-base"
                   ></textarea>
                 </div>
 
                 {status !== 'idle' && (
-                  <div className={`p-4 rounded-2xl text-sm font-medium ${
+                  <div className={`p-3 sm:p-4 rounded-2xl text-xs sm:text-sm font-medium ${
                     status === 'success' 
                       ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' 
                       : 'bg-red-500/20 text-red-400 border border-red-500/30'
@@ -182,7 +182,7 @@ const Contact: React.FC<ContactProps> = ({ info }) => {
                 <button 
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-gradient-primary text-white py-5 rounded-2xl font-extrabold flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform shadow-xl shadow-indigo-500/20 group disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-primary text-white py-4 sm:py-5 rounded-2xl font-extrabold flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform shadow-xl shadow-indigo-500/20 group disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
                 >
                   {loading ? 'Sending...' : 'Send Message'} <Send size={20} className={`${!loading && 'group-hover:translate-x-1 group-hover:-translate-y-1'} transition-transform`} />
                 </button>
