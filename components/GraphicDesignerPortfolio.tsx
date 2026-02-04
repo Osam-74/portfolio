@@ -102,61 +102,61 @@ const GraphicDesignerPortfolio: React.FC<GraphicDesignerPortfolioProps> = ({ ima
 
       {/* Lightbox Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 overflow-y-auto">
           {/* Close Button */}
           <button
             onClick={() => setSelectedImage(null)}
-            className="absolute top-6 right-6 z-50 p-2 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-indigo-500 text-zinc-300 hover:text-indigo-400 transition-colors"
+            className="absolute top-4 sm:top-6 right-4 sm:right-6 z-50 p-2 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-indigo-500 text-zinc-300 hover:text-indigo-400 transition-colors"
           >
             <X size={24} />
           </button>
 
           {/* Main Content */}
-          <div className="max-w-4xl w-full">
+          <div className="max-w-4xl w-full py-8 sm:py-0">
             {/* Image Container */}
-            <div className="relative mb-8 group">
+            <div className="relative mb-4 sm:mb-8 group">
               <img
                 src={selectedImage.image}
                 alt={selectedImage.title}
-                className="w-full rounded-3xl border border-zinc-700 shadow-2xl shadow-indigo-500/20"
+                className="w-full h-auto max-h-[50vh] sm:max-h-[70vh] rounded-2xl sm:rounded-3xl border border-zinc-700 shadow-2xl shadow-indigo-500/20 object-contain"
               />
 
               {/* Navigation Buttons */}
               <button
                 onClick={handlePrev}
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/50 border border-zinc-700 hover:border-indigo-500 text-white hover:text-indigo-400 transition-all opacity-0 group-hover:opacity-100"
+                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 p-2 sm:p-3 rounded-full bg-black/50 border border-zinc-700 hover:border-indigo-500 text-white hover:text-indigo-400 transition-all opacity-0 group-hover:opacity-100"
               >
-                <ChevronLeft size={24} />
+                <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
               </button>
               <button
                 onClick={handleNext}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/50 border border-zinc-700 hover:border-indigo-500 text-white hover:text-indigo-400 transition-all opacity-0 group-hover:opacity-100"
+                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 p-2 sm:p-3 rounded-full bg-black/50 border border-zinc-700 hover:border-indigo-500 text-white hover:text-indigo-400 transition-all opacity-0 group-hover:opacity-100"
               >
-                <ChevronRight size={24} />
+                <ChevronRight size={20} className="sm:w-6 sm:h-6" />
               </button>
             </div>
 
             {/* Details Section */}
-            <div className="glass-card p-8 rounded-3xl border border-zinc-800">
-              <div className="flex items-start justify-between mb-6">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-3 text-zinc-100">{selectedImage.title}</h2>
-                  <span className="inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-sm font-bold text-indigo-300 capitalize">
+            <div className="glass-card p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl border border-zinc-800">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4 sm:mb-6">
+                <div className="min-w-0">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3 text-zinc-100 break-words">{selectedImage.title}</h2>
+                  <span className="inline-block px-3 sm:px-4 py-1 sm:py-2 rounded-lg bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-xs sm:text-sm font-bold text-indigo-300 capitalize">
                     {selectedImage.category}
                   </span>
                 </div>
               </div>
 
-              <p className="text-zinc-300 text-lg mb-8 leading-relaxed">{selectedImage.description}</p>
+              <p className="text-zinc-300 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed">{selectedImage.description}</p>
 
               {/* Tools Used */}
-              <div className="mb-6">
-                <h3 className="text-sm font-bold text-zinc-400 uppercase tracking-widest mb-4">Tools & Techniques</h3>
-                <div className="flex flex-wrap gap-3">
+              <div className="mb-4 sm:mb-6">
+                <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-3 sm:mb-4">Tools & Techniques</h3>
+                <div className="flex flex-wrap gap-2 sm:gap-3">
                   {selectedImage.tools.map((tool, idx) => (
                     <span
                       key={idx}
-                      className="px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-indigo-500/30 hover:text-indigo-400 transition-colors"
+                      className="px-3 sm:px-4 py-1 sm:py-2 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-300 text-xs sm:text-sm font-semibold hover:border-indigo-500/30 hover:text-indigo-400 transition-colors"
                     >
                       {tool}
                     </span>
@@ -165,20 +165,20 @@ const GraphicDesignerPortfolio: React.FC<GraphicDesignerPortfolioProps> = ({ ima
               </div>
 
               {/* Image Counter */}
-              <div className="pt-6 border-t border-zinc-700 flex items-center justify-between">
-                <span className="text-zinc-400 text-sm font-semibold">
+              <div className="pt-4 sm:pt-6 border-t border-zinc-700 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <span className="text-zinc-400 text-xs sm:text-sm font-semibold">
                   {selectedIndex + 1} of {images.length} projects
                 </span>
-                <div className="flex gap-3">
+                <div className="flex gap-2 sm:gap-3">
                   <button
                     onClick={handlePrev}
-                    className="px-6 py-2 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-indigo-500 text-zinc-300 hover:text-indigo-400 font-semibold transition-colors"
+                    className="flex-1 sm:flex-none px-4 sm:px-6 py-2 sm:py-2 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-indigo-500 text-zinc-300 hover:text-indigo-400 font-semibold transition-colors text-sm"
                   >
                     ← Previous
                   </button>
                   <button
                     onClick={handleNext}
-                    className="px-6 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold hover:scale-105 transition-transform"
+                    className="flex-1 sm:flex-none px-4 sm:px-6 py-2 sm:py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold hover:scale-105 transition-transform text-sm"
                   >
                     Next →
                   </button>

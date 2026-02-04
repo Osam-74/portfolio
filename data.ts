@@ -296,7 +296,7 @@ export const capacitiesData = {
         title: "Valentine's Special Packages",
         category: "promotional",
         description: "Eye-catching promotional design for Valentine's Day special packages. Features vibrant red and gold colour scheme with romantic imagery, package tiers (Self Love, Gift My Love, Premium & Luxury, Sweetheart Special), clear pricing, and call-to-action details. Designed to drive conversions with visual hierarchy and compelling offers.",
-        image: "/images/Design 1.png",
+        image: "/images/Design%201.png",
         tools: ["Adobe Photoshop", "Canva Pro", "Promotional Design"]
       },
       {
@@ -304,7 +304,7 @@ export const capacitiesData = {
         title: "Valentine's Special Packages (Variant)",
         category: "promotional",
         description: "Alternative variant of the Valentine's Day promotional design featuring the same package offers with adjusted layout and styling. Maintains brand consistency while providing design flexibility for different marketing channels.",
-        image: "/images/Design 1b.png",
+        image: "/images/Design%201b.png",
         tools: ["Adobe Photoshop", "Canva Pro", "Design Variations"]
       },
       {
@@ -376,7 +376,7 @@ export const capacitiesData = {
         title: "DIGEST Programme Front Cover",
         category: "print",
         description: "Professional programme cover design for the DIGEST educational initiative. Features clean typography, strategic layout with key information hierarchy, and professional colour scheme. Designed to establish credibility and guide participants through programme details with elegant visual presentation.",
-        image: "/images/DIGEST programme.png",
+        image: "/images/DIGEST%20programme.png",
         tools: ["Adobe InDesign", "Photoshop", "Print Design"]
       }
     ],
