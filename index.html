@@ -59,6 +59,17 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
+        /* Additional mappings for common Tailwind opacity variants and group-hover */
+        .bg-indigo-500{ background-color: var(--grad-2-start) !important; }
+        .bg-indigo-500\/10{ background-color: rgba(226,251,206,0.10) !important; }
+        .border-indigo-500\/20{ border-color: rgba(226,251,206,0.20) !important; }
+        .border-indigo-500\/30{ border-color: rgba(226,251,206,0.30) !important; }
+        .group:hover .group-hover\:text-indigo-400{ color: var(--accent) !important; }
+        .group:hover .group-hover\:border-indigo-500\/20{ border-color: rgba(226,251,206,0.20) !important; }
+        .group:hover .group-hover\:border-indigo-500\/30{ border-color: rgba(226,251,206,0.30) !important; }
+        .group:hover .group-hover\:text-indigo-300{ color: var(--accent-2) !important; }
+
         ::-webkit-scrollbar-track {
             background: #09090b;
         }
