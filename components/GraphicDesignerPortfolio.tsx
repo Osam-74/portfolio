@@ -65,13 +65,13 @@ const GraphicDesignerPortfolio: React.FC<GraphicDesignerPortfolioProps> = ({ ima
           <div
             key={image.id}
             onClick={() => handleImageClick(image, index)}
-            className="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-indigo-500/30 transition-all duration-300 cursor-pointer h-64 md:h-72"
+            className="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-indigo-500/30 transition-all duration-300 cursor-pointer min-h-64 md:min-h-72 flex items-center justify-center"
           >
             {/* Image */}
             <img
               src={image.image}
               alt={image.title}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
             />
 
             {/* Overlay */}
