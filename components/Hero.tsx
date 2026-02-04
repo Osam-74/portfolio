@@ -70,7 +70,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
               is displayed with a modern, high-contrast aesthetic that fits the dark theme.
             */}
             <img 
-              src="/portfolio/images/profile.png" 
+              src="/images/profile.png" 
               alt="Olamide Samuel Amusan" 
               className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
             />

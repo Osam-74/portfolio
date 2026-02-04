@@ -67,7 +67,7 @@ export const portfolioData: CandidateData = {
       name: "Mobile E-commerce WordPress Theme",
       description: "Custom theme development from Figma design with dynamic content management, WooCommerce integration, and mobile-first responsive implementation",
       technologies: ["PHP", "WordPress", "ACF", "WooCommerce", "JavaScript", "Git"],
-      image: "/portfolio/images/placeholder-image-5.png",
+      image: "/images/placeholder-image-5.png",
       links: {
         live_demo: "https://ecomassign.42web.io/",
         source_code: "https://github.com/Osam-74/shopco-acf",
@@ -78,7 +78,7 @@ export const portfolioData: CandidateData = {
       name: "MFTP Visitor Pass (Free)",
       description: "Essential visitor pass creation and verification WordPress plugin designed for small-to-medium estates, gated communities, and facilities. Features manual or front-end form visitor pass creation, configurable passcodes with 24-hour expiry, verification interface for security personnel, entry logging with dashboard statistics, role-based permissions for residents and security, and monthly pass limits.",
       technologies: ["WordPress", "PHP", "MySQL", "JavaScript", "Plugin Development"],
-      image: "/portfolio/images/mftp-visitor-pass.png",
+      image: "/images/mftp-visitor-pass.png",
       links: {
         source_code: "https://github.com/Osam-74"
       }
@@ -92,7 +92,7 @@ export const portfolioData: CandidateData = {
       name: "Techesite Website Migrations",
       description: "Multiple seamless site migrations with DNS configuration and post-migration optimization",
       technologies: ["cPanel", "DNS Management", "MySQL", "WordPress"],
-      image: "/portfolio/images/techesite-migrations.png"
+      image: "/images/techesite-migrations.png"
     }
   ],
   education: {
