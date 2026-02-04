@@ -10,19 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        :root{
-          --grad-1-start: #FFFDEE;
-          --grad-1-end:   #E3EF26;
-          --grad-2-start: #E2FBCE;
-          --grad-2-end:   #076653;
-          --grad-3-start: #E3EF26;
-          --grad-3-end:   #0C342C;
-          --grad-4-start: #076653;
-          --grad-4-end:   #06231D;
-          --accent: var(--grad-2-end);
-          --accent-2: var(--grad-1-end);
-        }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: #09090b;
@@ -37,39 +24,16 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .text-gradient {
-            background: linear-gradient(to right, var(--grad-1-start), var(--grad-2-end));
+            background: linear-gradient(to right, #818cf8, #c084fc, #e879f9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .bg-gradient-primary {
-            background: linear-gradient(135deg, var(--grad-2-start) 0%, var(--grad-3-start) 100%);
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
         }
-
-        /* Override common Tailwind utility classes to match brand gradients */
-        .from-indigo-500{ --tw-gradient-from: var(--grad-2-start); }
-        .to-indigo-600{ --tw-gradient-to: var(--grad-4-end); }
-        .from-purple-500{ --tw-gradient-from: var(--grad-3-start); }
-        .to-purple-600{ --tw-gradient-to: var(--grad-4-end); }
-        .text-indigo-400{ color: var(--accent) !important; }
-        .text-indigo-300{ color: var(--accent-2) !important; }
-        .border-indigo-500{ border-color: var(--grad-2-start) !important; }
-        .hover\:border-indigo-500:hover{ border-color: var(--grad-2-start) !important; }
-        .hover\:text-indigo-400:hover{ color: var(--accent) !important; }
-
         ::-webkit-scrollbar {
             width: 8px;
         }
-
-        /* Additional mappings for common Tailwind opacity variants and group-hover */
-        .bg-indigo-500{ background-color: var(--grad-2-start) !important; }
-        .bg-indigo-500\/10{ background-color: rgba(226,251,206,0.10) !important; }
-        .border-indigo-500\/20{ border-color: rgba(226,251,206,0.20) !important; }
-        .border-indigo-500\/30{ border-color: rgba(226,251,206,0.30) !important; }
-        .group:hover .group-hover\:text-indigo-400{ color: var(--accent) !important; }
-        .group:hover .group-hover\:border-indigo-500\/20{ border-color: rgba(226,251,206,0.20) !important; }
-        .group:hover .group-hover\:border-indigo-500\/30{ border-color: rgba(226,251,206,0.30) !important; }
-        .group:hover .group-hover\:text-indigo-300{ color: var(--accent-2) !important; }
-
         ::-webkit-scrollbar-track {
             background: #09090b;
         }
